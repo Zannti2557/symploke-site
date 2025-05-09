@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Symploké – Aula Interactiva</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- pdf.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.js"></script>
+  <script>
+    // línea obligatoria para que cargue el worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js";
+  </script>
+</head>
+<body>
+  <header><h1>Symploké de Gustavo Bueno</h1></header>
+
+  <main>
+    <canvas id="pdf-canvas"></canvas>
+    <section id="lesson-box">
+      <h2 id="lesson-title"></h2>
+      <p id="lesson-body"></p>
+      <button id="prev">◀ Atrás</button>
+      <button id="next">Siguiente ▶</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
